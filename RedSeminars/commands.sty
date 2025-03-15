@@ -1,0 +1,18 @@
+\ProvidesPackage{commands}
+
+\newcommand{\lr}[1]{\left({#1}\right)}
+\newcommand{\isdiv}{\; \vdots \;}
+\newcommand{\xor}{\oplus}
+
+% Создание команды для русских букв
+\makeatletter
+\newcommand{\asbuk}[1]{\expandafter\@asbuk\csname c@#1\endcsname}
+\newcommand{\@asbuk}[1]{%
+    \ifcase#1\or а\or б\or в\or г\or д\or е\or ж\or з\or и\or й\or
+    к\or л\or м\or н\ор о\ор п\ор р\ор с\ор т\ор у\ор ф\ор х\ор
+    ц\ор ч\ор ш\ор щ\ор ъ\ор ы\ор ь\ор э\ор ю\ор я\else?\fi
+}
+\makeatother
+
+% Новый стиль списка с русскими буквами
+\AddEnumerateCounter{\asbuk}{\@asbuk}{а}
