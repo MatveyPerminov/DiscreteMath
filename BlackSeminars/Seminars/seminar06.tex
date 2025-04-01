@@ -24,7 +24,7 @@ n! \cdot (1 - 1 + \frac{1}{2!} - \frac{1}{3!} + \ldots + (-1)^n \cdot \frac{1}{n
 |A_1 \cup A_2 \cup \ldots \cup A_n| = \sum_{i=1}^nN_i - \sum_{i<j}{N_{ij}} + \sum_{i<j<k}{N_{ijk}} - \ldots + (-1)^n N_{1\ldots n} =
 \]
 \[
-= n \cdot (n-1)! - C^2_n \cdot (n-2)! + \ldots + (-1)^n \cdot 1 = \frac{n!}{1} - \frac{n!}{2} + \frac{n!}{3} + \ldots + (-1)^n \frac{n!}{n!} = n! \cdot (1 - \frac{1}{2}  + \ldots + (-1)^n \frac{1}{n!})
+= n \cdot (n-1)! - C^2_n \cdot (n-2)! + \ldots + (-1)^n \cdot 1 = \frac{n!}{1} - \frac{n!}{2} + \frac{n!}{3!} + \ldots + (-1)^n \frac{n!}{n!} = n! \cdot (1 - \frac{1}{2}  + \ldots + (-1)^n \frac{1}{n!})
 \]
 
 Всего перестановок на $n$ элементах $n!$, поэтому чтобы получить итоговый ответ, нужно лишь вычесть эту сумму из $n!$.
